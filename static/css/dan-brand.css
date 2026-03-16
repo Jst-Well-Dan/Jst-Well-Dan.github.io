@@ -1,0 +1,83 @@
+/* Dan's Brand — Bear Cub light/dark mode override
+ *
+ * Bear Cub (herman.css) is hardcoded dark-only.
+ * This file flips it to light-default with system-aware dark mode.
+ *
+ * Light mode  (default): warm white canvas, amber #b45309 accent
+ * Dark  mode  (system) : Bear Cub original dark #181a20, orange #f97316 accent
+ * ----------------------------------------------------------------- */
+
+/* ── Light mode (default) ── */
+body {
+  background: #fafaf8;
+  color: #1c1917;
+}
+
+/* Links: warm amber */
+a {
+  color: #b45309;
+}
+a:hover,
+a:focus {
+  color: #92400e;
+}
+
+/* Inline code: light surface */
+code {
+  background-color: #f5f0e8;
+  color: #1c1917;
+}
+
+/* Code block accent border */
+pre {
+  border-left: 3px solid #e4d9bc;
+}
+
+/* Table borders: use warm dark */
+table,
+th,
+td {
+  border-color: #d6cfc4;
+}
+
+/* Skip-link: match light background */
+.skip-link {
+  background-color: #fafaf8;
+  color: #1c1917;
+}
+
+/* ── Dark mode (follow system preference) ── */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #181a20;
+    color: #fafafa;
+  }
+
+  a {
+    color: #f97316;
+  }
+  a:hover,
+  a:focus {
+    color: #fb923c;
+  }
+
+  code {
+    background-color: #282a36;
+    color: #fafafa;
+  }
+
+  pre {
+    border-left: 3px solid #44403c;
+  }
+
+  table,
+  th,
+  td {
+    border-color: #fafafa;
+  }
+
+  .skip-link {
+    background-color: #181a20;
+    color: #fafafa;
+  }
+}

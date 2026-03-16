@@ -1,0 +1,86 @@
+baseURL = "https://Jst-Well-Dan.github.io/"
+languageCode = "zh-CN"
+title = "Dan"
+theme = "PaperMod"
+enableRobotsTXT = true
+paginate = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]  # JSON 是搜索索引所必需的
+
+[params]
+  author = "Dan"
+  description = "知识外化，独立思考。"
+  defaultTheme = "auto"           # auto / light / dark
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowFullTextinRSS = true
+  ShowToc = true                  # 自动生成目录
+  TocOpen = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  disableSpecial1stPost = false
+  disableHLJS = false
+
+  # 首页 — Home-Info 模式
+  [params.homeInfoParams]
+    Title = "Hi，我是 Dan 👋"
+    Content = "知识外化，独立思考。"
+
+  # 封面图默认行为
+  [params.cover]
+    hiddenInList = false
+    hiddenInSingle = false
+    responsive = true
+
+  # 搜索（Fuse.js）
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    limit = 10
+    keys = ["title", "permalink", "summary", "content"]
+
+# 社交链接
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/jst-well-dan"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup.highlight]
+  style = "github-dark"
+  noClasses = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# 导航菜单
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "文字"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 3
+
+[[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 4

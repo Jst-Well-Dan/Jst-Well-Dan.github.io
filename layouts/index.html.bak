@@ -1,0 +1,22 @@
+{{ define "main" }}
+<content>
+  {{ .Content }}
+</content>
+
+<h3>最近文章</h3>
+<ul class="blog-posts">
+  {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+  <li>
+    <span>
+      <i>
+        <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+          {{ .Date.Format "2006-01-02" }}
+        </time>
+      </i>
+    </span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+<p><a href="/posts/">查看更多文章...</a></p>
+{{ end }}
