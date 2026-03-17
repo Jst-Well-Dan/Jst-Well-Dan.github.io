@@ -9,7 +9,8 @@ tags:
   - 知识外化
   - AI
   - 表达
-cover: hello_world.png
+cover:
+  image: hello_world.png
 ---
 # Hello World
 
