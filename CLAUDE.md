@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 项目概述
 
-Dan 的个人博客，Hugo + Bear Cub 主题，部署到 GitHub Pages（`https://jst-well-dan.github.io/`）。用途：知识外化，发布不适合国内社交媒体的内容。
+Dan 的个人博客，Hugo + PaperMod 主题，部署到 GitHub Pages（`https://jst-well-dan.github.io/`）。用途：知识外化
 
 ## 常用命令
 
@@ -27,8 +27,7 @@ content/posts/<slug>/     每篇文章是独立的 Page Bundle
   image-*.png             文章引用的图片，与 index.md 同目录（相对路径引用）
 
 static/css/dan-brand.css  品牌色覆盖（仅链接和代码块左边框）
-layouts/partials/         extend_head.html — Bear Cub 的 CSS 注入钩子
-themes/hugo-bearcub/      git submodule，不要手动修改主题文件
+themes/PaperMod/          git submodule，不要手动修改主题文件
 .github/workflows/        hugo.yml — push to main 自动构建并部署到 Pages
 ```
 
@@ -51,11 +50,11 @@ tags: ["标签1", "标签2"]
 
 ## 品牌样式
 
-"Gallery 逻辑"：Bear Cub 主题保持中性灰，品牌色仅施加于链接和代码块左边框，使封面图的品牌色更突出。
+"Gallery 逻辑"：PaperMod 主题保持中性灰，品牌色仅施加于链接和代码块左边框，使封面图的品牌色更突出。
 
 - 亮色模式链接色：`#b45309`（暖琥珀）
 - 暗色模式链接色：`#f97316`（明橙）
-- 扩展主题样式只在 `static/css/dan-brand.css` 和 `layouts/partials/extend_head.html` 中修改，不动主题源码。
+- 扩展主题样式只在 `static/css/dan-brand.css` 中修改，不动主题源码。
 
 ## 部署
 

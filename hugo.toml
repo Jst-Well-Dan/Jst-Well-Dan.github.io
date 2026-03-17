@@ -11,7 +11,6 @@ enableRobotsTXT = true
 
 [params]
   author = "Dan"
-  description = "知识外化，独立思考。"
   defaultTheme = "auto"           # auto / light / dark
   ShowReadingTime = true
   ShowShareButtons = false
@@ -30,7 +29,6 @@ enableRobotsTXT = true
   # 首页 — Home-Info 模式
   [params.homeInfoParams]
     Title = "Hi，我是 Dan 👋"
-    Content = "知识外化，独立思考。"
 
   # 封面图默认行为
   [params.cover]
