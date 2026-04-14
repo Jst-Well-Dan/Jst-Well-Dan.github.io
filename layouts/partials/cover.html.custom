@@ -37,10 +37,11 @@
 </figure>
 
 {{- else }}
-{{/* 列表页：使用 640px 宽的高质量缩略图，兼顾加载速度与清晰度 */}}
+{{/* 列表页：简单直接加载，不走响应式 srcset，但进行高质量缩略图缩放以确保清晰度 */}}
 <figure class="entry-cover">
     {{- if $cover }}
-        {{- $thumb := $cover.Process "resize 640x Lanczos q90" }}
+        {{/* 生成 360px 宽度的高质量缩略图，适配各类高分屏 (Retina/4K) */}}
+        {{- $thumb := $cover.Process "resize 360x Lanczos q90" }}
         <img loading="lazy" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ $alt }}">
     {{- else }}
         <img loading="lazy" src="{{ $imgdl }}" alt="{{ $alt }}">
