@@ -10,7 +10,7 @@ tags:
   - 自动化
   - 职业发展
 cover:
-  image: image-20260409154848524.png
+  image: cover-career-ops.png
 ---
 
 GitHub 上有个新项目，2天斩获2万 star。
