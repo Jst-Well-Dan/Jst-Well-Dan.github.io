@@ -9,7 +9,7 @@ tags:
   - "视频生成"
   - "思考"
 cover:
-  image: "Career-Ops：如何构建 AI 求职工具.png"
+  image: "判断一个视频是不是AI的方法，就是默认所有的视频都是AI.png"
 ---
 
 判断一个视频是不是 AI 的方法，就是默认所有的视频都是 AI
