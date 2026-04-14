@@ -26,9 +26,15 @@ enableRobotsTXT = true
   disableSpecial1stPost = false
   disableHLJS = false
 
-  # 首页 — Home-Info 模式
-  [params.homeInfoParams]
-    Title = "Hi，我是 Dan 👋"
+  # 首页 — Profile Mode
+  [params.profileMode]
+    enabled = true
+    title = "Hi，我是 Dan 👋"
+    subtitle = "记录思考，分享知识。关注 AI、编程与人文。"
+    imageUrl = "images/avatar.jpg"
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = "Dan"
 
   # 封面图默认行为
   [params.cover]
