@@ -1,6 +1,6 @@
 ---
 title: "Career-Ops：如何构建 AI 求职工具"
-date: 2026-04-14
+date: 2026-04-09
 description: "本文分析了如何利用 Claude Code 和系统化标准构建高效的 AI 求职工具 Career-Ops。"
 categories:
   - 工具与技术
